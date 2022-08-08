@@ -368,5 +368,34 @@ footer{
         padding-top: 1rem;
     }
 
+}
+
+@media (min-width:2000px){
+    .interactive-section{
+        display: flex;     
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .interactive-text-block{
+        position: relative;
+    }
+
+    #interactive-headline{
+        font-size: 4rem;
+    }
+    
+    .grid{
+        grid-template-columns: repeat(8, auto);
+    }
+    .grid-header{
+        grid-row: 1 / 2;
+        grid-column: 1 / 8;
+    }
+
+    .creations-button{
+        grid-row: 1 /2;
+        grid-column: 8 / 9;
+    }
 
 }
