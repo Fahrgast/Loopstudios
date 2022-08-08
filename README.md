@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub/responsive-landingpage-using-css-grid-and-flexbox-5GpZWQ3cr1
 - Live Site URL: https://fahrgast.github.io/Loopstudios/
 
 ### Built with
