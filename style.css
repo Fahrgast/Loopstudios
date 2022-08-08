@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5{
     height: 100vh;  
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .hero .navbar{
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5{
 /* Hero Section Content */
 .hero .hero-content-wrapper{
     display: flex;
-    height: 80vh;
+    height: 80%;
     width: 90%;
     margin: auto;
 }
@@ -92,6 +93,12 @@ h1, h2, h3, h4, h5{
 
 #img-interactive-section{
     max-width: 100%;
+    height: auto;
+}
+
+#img-interactive-section img{
+    max-width: 100%;
+    height: auto;
 }
 
 .interactive-section .interactive-text-block{
@@ -112,6 +119,8 @@ h1, h2, h3, h4, h5{
     grid-template-rows: repeat(10, auto);
     grid-template-columns: auto;
     gap: 1.5rem;
+    max-width: 100%;
+
 }
 
 .grid-header{
@@ -124,6 +133,7 @@ h1, h2, h3, h4, h5{
 .creation-content{
     position: relative;
     height: fit-content;
+    max-width: 100%;
 }
 
 .creation-image-text{
@@ -138,6 +148,13 @@ h1, h2, h3, h4, h5{
 
 .creation-image{
     max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.creation-image img{
+    max-width: 100%;
+    height: auto;
     z-index: 1;
 }
 
@@ -154,6 +171,10 @@ h1, h2, h3, h4, h5{
 /* Footer */
 footer{
     background-color: var(--black);
+    width: 100%;
+}
+
+.footer-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,6 +186,12 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #logo-footer{
@@ -182,6 +209,8 @@ footer{
 
 .footer-social{
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 2.5rem;
     padding-bottom: 1rem;
 }
@@ -200,6 +229,144 @@ footer{
     padding-bottom: 2rem;
 }
 
+/* Responsiveness */
+@media (min-width:992px){
+    /* Hero Section */ 
+    .hero{
+        height: 30vh;
+    }
+
+    .hero .navbar{
+        max-width: 80%;
+        padding-top: 4rem;
+    }
+
+    .hero .navbar .nav-item .nav-link{
+        padding-left: 2rem;
+    }
+
+    .hero-content-wrapper{
+        max-width: 80%;
+    }
+
+    .hero-content{
+        max-width: 50%;
+    }
+
+    #headline{
+        font-size: 4rem;
+    }
+
+    /* Interactive Section */
+    .interactive-section{
+        position: relative;     
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .interactive-text-block{
+        background-color: var(--white); 
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 55%;
+        padding-left: 7rem;
+        padding-top: 7rem;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #interactive-body{
+        margin-bottom: 0;
+        line-height: 2;
+        text-align: left;
+    }
+
+    #interactive-headline{
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;        
+    }
+
+     /* Grid Section */
+    .creations{
+        margin-top: 10rem !important;
+    }
+
+    .creations-heading{
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .grid{
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 0;
+        align-items: center;
+        padding-bottom: 10rem;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .grid-header{
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+    }
+
+    .creations-button{
+        grid-row: 1 /2;
+        grid-column: 4 / 5;
+        justify-self: end;
+        align-self: end;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+
+    /* Footer */
+
+    footer{
+        width: 100%;
+    }
+
+    .footer-container{
+        max-width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .footer-nav{
+        align-items: flex-start;
+    }
+
+    #logo-footer{
+        padding-top: 0;
+        max-width: 40%;
+    }
+
+    .footer-links{
+        flex-direction: row;
+    }
+
+    .footer-links a{
+        padding-right: 2rem;
+        color: var(--Dark-Gray);
+    }
+
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 1rem;
+    }
+
+    .credentials{
+        padding-top: 1rem;
+    }
 
 
-
+}
